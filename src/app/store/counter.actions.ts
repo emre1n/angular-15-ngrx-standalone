@@ -7,6 +7,11 @@ export const increment = createAction(
   props<{ value: number }>()
 );
 
+export const decrement = createAction(
+  '[Counter] Decrement',
+  props<{ value: number }>()
+);
+
 // This is a function that creates a reducer function
 // (Old way - what's going on under the hood)
 
